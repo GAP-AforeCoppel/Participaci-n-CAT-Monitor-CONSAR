@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la Página -->
+    <title>AFORE Coppel - Reporte Ejecutivo Calificación Monitor CONSAR</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons (Script UMD Corregido) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Fuentes de Google (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Aplicamos la fuente Inter como base */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilo para la rotación del icono del colapsable */
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+        .transition-transform {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Keyframes para la animación de rebote (Footer) */
+        @keyframes bounce-subtle {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px); /* Movimiento vertical */
+            }
+        }
+
+        /* Keyframes para el escalado sutil (Footer) */
+        @keyframes scale-subtle {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02); /* Ligeramente más grande */
+            }
+        }
+
+        /* Aplicación de las animaciones */
+        .animate-subtle-bounce {
+            animation: bounce-subtle 2s infinite ease-in-out;
+        }
+        .animate-subtle-scale {
+            animation: scale-subtle 2s infinite ease-in-out;
+        }
+
+        /* Estilo de marcador de posición para logos (para diagnóstico) - ELIMINADO */
+        
+        .header-logo-placeholder {
+            background: #ffffff22; 
+            border: 2px dashed #ffffff88; 
+            padding: 4px; 
+            min-width: 150px;
+            height: 3rem; /* h-12 */
+        }
+
+    </style>
+</head>
+<body class="bg-slate-100 p-4 md:p-8 min-h-screen flex items-center justify-center">
+
+    <!-- Contenedor Principal del Reporte -->
+    <main class="max-w-4xl w-full bg-white shadow-xl rounded-lg overflow-hidden border border-slate-200">
+        
+        <!-- Encabezado Principal: Logo centrado arriba del título -->
+        <header class="p-6 md:p-8 bg-blue-800 text-white flex flex-col justify-center items-center">
+            <!-- Logo Centrado Arriba -->
+            <div class="flex justify-center mb-4">
+                <!-- 
+                  NOTA: El 'src' del logo asume que la imagen "Nuevo Logo Afore.png" 
+                  se encuentra en la misma carpeta 'docs/' que este archivo HTML. 
+                -->
+                <img src="Nuevo Logo Afore.png" alt="Logo Afore Coppel" class="h-10 md:h-12" style="background: #ffffff22; border: 2px dashed #ffffff88; padding: 4px; min-width: 150px;">
+            </div>
+            <!-- Contenido (Título e Icono) -->
+            <div class="flex items-center justify-center space-x-4 text-center">
+                <i data-lucide="award" class="w-10 h-10 text-amber-300 flex-shrink-0"></i>
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">Posicionamiento Estratégico</h1>
+                    <p class="text-xl md:text-2xl font-semibold text-blue-100">Segundo Lugar en Calificación Monitor CONSAR</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="p-6 md:p-8 space-y-8">
+            
+            <!-- Sección 1: El Logro Estratégico -->
+            <section>
+                <div class="flex items-center space-x-3 mb-4">
+                    <i data-lucide="trophy" class="w-6 h-6 text-blue-600"></i>
+                    <h2 class="text-xl font-bold text-slate-800">El Logro Estratégico</h2>
+                </div>
+                <div class="space-y-3 text-slate-700">
+                    <p>
+                        AFORE Coppel obtuvo el <strong>Segundo Lugar en la Calificación Monitor CONSAR</strong>, un hito que refleja la madurez de nuestra operación y el éxito de las estrategias implementadas.
+                    </p>
+                    <p>
+                        Este logro (basado en <strong>el indicador generado por CONSAR a nivel gremial</strong>) nos posiciona como una AFORE en evolución constante, consolidando una <strong>clara Ventaja Competitiva</strong> en el mercado y reforzando la confianza de nuestros clientes.
+                    </p>
+                    
+                    <!-- Contexto Gremial (Tabla Completa) -->
+                    <div class="pt-4">
+                        <h4 class="text-base font-semibold text-slate-800 mb-3 flex items-center space-x-2">
+                            <i data-lucide="bar-chart-3" class="w-5 h-5 text-blue-600"></i>
+                            <span>Contexto Gremial (Todas las Afores)</span>
+                        </h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left border-collapse">
+                                <thead class="bg-slate-100">
+                                    <tr>
+                                        <th class="p-3 font-semibold border-b border-slate-300">Pos.</th>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <th class="p-3 font-semibold border-b border-slate-300">Afore</th>
+                                        <th class="p-3 font-semibold border-b border-slate-300 text-right">Calificación Global</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-slate-700">
+                                    <!-- 
+                                      NOTA: Columna de Logos Eliminada
+                                    -->
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-3 align-middle">1</td>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <td class="p-3 align-middle">Inbursa</td>
+                                        <td class="p-3 text-right align-middle">85.7</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200 bg-blue-50">
+                                        <td class="p-3 font-bold text-blue-700 align-middle">2</td>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <td class="p-3 font-bold text-blue-700 align-middle">Coppel</td>
+                                        <td class="p-3 text-right font-bold text-blue-700 align-middle">84.6</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-3 align-middle">3</td>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <td class="p-3 align-middle">PENSIONISSSTE</td>
+                                        <td class="p-3 text-right align-middle">82.5</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-3 align-middle">4</td>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <td class="p-3 align-middle">Banamex</td>
+                                        <td class="p-3 text-right align-middle">81.1</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-3 align-middle">5</td>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <td class="p-3 align-middle">Profuturo</td>
+                                        <td class="p-3 text-right align-middle">80.0</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-3 align-middle">5</td>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <td class="p-3 align-middle">XXI Banorte</td>
+                                        <td class="p-3 text-right align-middle">80.0</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-3 align-middle">7</td>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <td class="p-3 align-middle">SURA</td>
+                                        <td class="p-3 text-right align-middle">79.4</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-3 align-middle">8</td>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <td class="p-3 align-middle">Principal</td>
+                                        <td class="p-3 text-right align-middle">73.8</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-3 align-middle">9</td>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <td class="p-3 align-middle">Azteca</td>
+                                        <td class="p-3 text-right align-middle">65.4</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-3 align-middle">10</td>
+                                        <!-- Columna de Logo Eliminada -->
+                                        <td class="p-3 align-middle">InverCap</td>
+                                        <td class="p-3 text-right align-middle">65.3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Gráfica Comparativa (Todas las Afores) -->
+                    <div class="pt-4">
+                        <h4 class="text-base font-semibold text-slate-800 mb-3 flex items-center space-x-2">
+                            <i data-lucide="line-chart" class="w-5 h-5 text-blue-600"></i>
+                            <span>Comparativa Visual de Calificación</span>
+                        </h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex items-center">
+                                <span class="w-24 text-slate-600 font-medium text-right pr-2">Inbursa</span>
+                                <div class="flex-1 h-6 bg-slate-300 rounded-r-md"><div class="h-6 bg-slate-400 rounded-r-md" style="width: 85.7%"></div></div>
+                                <span class="w-10 text-left pl-2 font-semibold text-slate-600">85.7</span>
+                            </div>
+                            <!-- Coppel Destacado -->
+                            <div class="flex items-center">
+                                <span class="w-24 text-blue-700 font-bold text-right pr-2">Coppel</span>
+                                <div class="flex-1 h-6 bg-blue-200 rounded-r-md"><div class="h-6 bg-blue-600 rounded-r-md" style="width: 84.6%"></div></div>
+                                <span class="w-10 text-left pl-2 font-bold text-blue-700">84.6</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 text-slate-600 font-medium text-right pr-2">PENSION...</span>
+                                <div class="flex-1 h-6 bg-slate-300 rounded-r-md"><div class="h-6 bg-slate-400 rounded-r-md" style="width: 82.5%"></div></div>
+                                <span class="w-10 text-left pl-2 font-semibold text-slate-600">82.5</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 text-slate-600 font-medium text-right pr-2">Banamex</span>
+                                <div class="flex-1 h-6 bg-slate-300 rounded-r-md"><div class="h-6 bg-slate-400 rounded-r-md" style="width: 81.1%"></div></div>
+                                <span class="w-10 text-left pl-2 font-semibold text-slate-600">81.1</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 text-slate-600 font-medium text-right pr-2">Profuturo</span>
+                                <div class="flex-1 h-6 bg-slate-300 rounded-r-md"><div class="h-6 bg-slate-400 rounded-r-md" style="width: 80.0%"></div></div>
+                                <span class="w-10 text-left pl-2 font-semibold text-slate-600">80.0</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 text-slate-600 font-medium text-right pr-2">XXI Banorte</span>
+                                <div class="flex-1 h-6 bg-slate-300 rounded-r-md"><div class="h-6 bg-slate-400 rounded-r-md" style="width: 80.0%"></div></div>
+                                <span class="w-10 text-left pl-2 font-semibold text-slate-600">80.0</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 text-slate-600 font-medium text-right pr-2">SURA</span>
+                                <div class="flex-1 h-6 bg-slate-300 rounded-r-md"><div class="h-6 bg-slate-400 rounded-r-md" style="width: 79.4%"></div></div>
+                                <span class="w-10 text-left pl-2 font-semibold text-slate-600">79.4</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 text-slate-600 font-medium text-right pr-2">Principal</span>
+                                <div class="flex-1 h-6 bg-slate-300 rounded-r-md"><div class="h-6 bg-slate-400 rounded-r-md" style="width: 73.8%"></div></div>
+                                <span class="w-10 text-left pl-2 font-semibold text-slate-600">73.8</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 text-slate-600 font-medium text-right pr-2">Azteca</span>
+                                <div class="flex-1 h-6 bg-slate-300 rounded-r-md"><div class="h-6 bg-slate-400 rounded-r-md" style="width: 65.4%"></div></div>
+                                <span class="w-10 text-left pl-2 font-semibold text-slate-600">65.4</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 text-slate-600 font-medium text-right pr-2">InverCap</span>
+                                <div class="flex-1 h-6 bg-slate-300 rounded-r-md"><div class="h-6 bg-slate-400 rounded-r-md" style="width: 65.3%"></div></div>
+                                <span class="w-10 text-left pl-2 font-semibold text-slate-600">65.3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-slate-200">
+
+            <!-- Sección 2: Oportunidad de Mejora -->
+            <section>
+                <div class="flex items-center space-x-3 mb-4">
+                    <i data-lucide="compass" class="w-6 h-6 text-red-600"></i>
+                    <h2 class="text-xl font-bold text-slate-800">Oportunidad de Mejora Detectada</h2>
+                </div>
+                
+                <h3 class="text-lg font-semibold text-slate-700 mb-3 flex items-center space-x-2">
+                    <i data-lucide="phone-missed" class="w-5 h-5 text-red-600"></i>
+                    <span>Área de Foco: Centro de Atención Telefónica (CAT)</span>
+                </h3>
+                
+                <div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-4 text-red-900">
+                    <p class="font-medium">
+                        En el indicador específico "16. Efectividad del CAT", obtuvimos una calificación de <strong>9.38</strong>.
+                    </p>
+                    <p class="text-sm mt-1">
+                        Esta puntuación nos situó en el <strong>8º lugar gremial</strong> en este rubro (donde 3 Afores alcanzaron el 10 perfecto). Este indicador fue el factor decisivo: alcanzar el 10 nos habría posicionado en el <strong>Primer Lugar</strong> de la calificación global.
+                    </p>
+                </div>
+                
+                <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <i data-lucide="info" class="w-5 h-5 text-amber-700"></i>
+                        <h4 class="font-semibold text-amber-900">Contexto: ¿Cómo se mide el CAT?</h4>
+                    </div>
+                    <p class="text-sm font-medium text-slate-700 mb-3">
+                        La calificación no es un promedio directo. Es una puntuación basada en tablas de equivalencia muy estrictas para dos factores clave:
+                    </p>
+                    
+                    <!-- Botones Colapsables -->
+                    <div class="space-y-3 mt-4">
+                        
+                        <!-- Botón 1: Llamadas Atendidas -->
+                        <div>
+                            <button onclick="toggleCollapse('collapse-1', 'icon-1')" class="w-full flex justify-between items-center text-left bg-red-50 p-3 rounded-lg border border-red-200 shadow-sm hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-red-500 transition-all cursor-pointer">
+                                <strong class="text-sm font-semibold text-red-800">1. Llamadas Atendidas (&lt; 20s):</strong>
+                                <i id="icon-1" data-lucide="chevron-down" class="w-5 h-5 text-red-600 transition-transform transform"></i>
+                            </button>
+                            <div id="collapse-1" class="hidden mt-2 px-3 py-2 bg-white rounded-lg border border-slate-200">
+                                <p class="text-sm text-slate-700 mb-3">Se exige un estándar de +85% de llamadas atendidas en menos de 20 segundos para obtener la máxima puntuación.</p>
+                                
+                                <table class="w-full text-sm text-left border-collapse">
+                                    <thead class="bg-slate-100">
+                                        <tr>
+                                            <th class="p-2 font-semibold border-b border-slate-300">Porcentaje de Llamadas Contestadas (&lt;20s)</th>
+                                            <th class="p-2 font-semibold border-b border-slate-300 text-right">Puntuación</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-slate-700">
+                                        <tr class="border-b border-slate-200"><td class="p-2">más de 85%</td><td class="p-2 text-right">100</td></tr>
+                                        <tr class="border-b border-slate-200"><td class="p-2">de 80.1% a 85%</td><td class="p-2 text-right">90</td></tr>
+                                        <tr class="border-b border-slate-200"><td class="p-2">de 75.1% a 80%</td><td class="p-2 text-right">80</td></tr>
+                                        <tr class="border-b border-slate-200"><td class="p-2">de 70.1% a 75%</td><td class="p-2 text-right">70</td></tr>
+                                        <tr class="border-b border-slate-200"><td class="p-2">de 65.1% a 70%</td><td class="p-2 text-right">60</td></tr>
+                                        <tr><td class="p-2">65% o menos</td><td class="p-2 text-right">50</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Botón 2: Llamadas Abandonadas -->
+                        <div>
+                            <button onclick="toggleCollapse('collapse-2', 'icon-2')" class="w-full flex justify-between items-center text-left bg-red-50 p-3 rounded-lg border border-red-200 shadow-sm hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-red-500 transition-all cursor-pointer">
+                                <strong class="text-sm font-semibold text-red-800">2. Llamadas Abandonadas:</strong>
+                                <i id="icon-2" data-lucide="chevron-down" class="w-5 h-5 text-red-600 transition-transform transform"></i>
+                            </button>
+                            <div id="collapse-2" class="hidden mt-2 px-3 py-2 bg-white rounded-lg border border-slate-200">
+                                <p class="text-sm text-slate-700 mb-3">Se requiere un porcentaje de abandono inferior al 3% para la máxima puntuación. Se penaliza fuertemente cada punto porcentual por encima.</p>
+                            
+                                <table class="w-full text-sm text-left border-collapse">
+                                    <thead class="bg-slate-100">
+                                        <tr>
+                                            <th class="p-2 font-semibold border-b border-slate-300">Porcentaje de Llamadas Abandonadas</th>
+                                            <th class="p-2 font-semibold border-b border-slate-300 text-right">Puntuación</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-slate-700">
+                                        <tr class="border-b border-slate-200"><td class="p-2">3% o menos</td><td class="p-2 text-right">100</td></tr>
+                                        <tr class="border-b border-slate-200"><td class="p-2">de 3.1% a 4%</td><td class="p-2 text-right">90</td></tr>
+                                        <tr class="border-b border-slate-200"><td class="p-2">de 4.1% a 5%</td><td class="p-2 text-right">80</td></tr>
+                                        <tr class="border-b border-slate-200"><td class="p-2">de 5.1% a 8%</td><td class="p-2 text-right">70</td></tr>
+                                        <tr class="border-b border-slate-200"><td class="p-2">de 8.1% a 9%</td><td class="p-2 text-right">60</td></tr>
+                                        <tr><td class="p-2">más de 9%</td><td class="p-2 text-right">50</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <p class="text-sm font-medium text-slate-700 mt-4">
+                        <strong>Explicación Ejecutiva:</strong> Este sistema de calificación castiga significativamente el no alcanzar los <strong class="text-amber-900">estándares de exigencia</strong>.
+                    </p>
+                </div>
+                
+                <p class="text-slate-700 mb-2">
+                    Considerando este estricto modelo, la calificación del CAT estuvo por debajo de los <strong class="text-red-700">estándares</strong> esperados, convirtiéndose en el principal limitante para alcanzar un mejor resultado global.
+                </p>
+                <p class="text-slate-700">
+                    El bajo desempeño del CAT diluyó el impacto positivo de otras áreas de excelencia.
+                </p>
+
+            </section>
+
+            <hr class="border-slate-200">
+
+            <!-- Sección 3: Plan de Acción -->
+            <section>
+                <div class="flex items-center space-x-3 mb-4">
+                    <i data-lucide="target" class="w-6 h-6 text-green-600"></i>
+                    <h2 class="text-xl font-bold text-slate-800">Plan de Acción Inmediato</h2>
+                </div>
+                
+                <!-- H3 "Estrategia 360" Eliminado -->
+                
+                <ul class="space-y-4">
+                    
+                    <!-- Orden Cambiado: 1. Optimización -->
+                    <li class="flex items-start space-x-3">
+                        <i data-lucide="settings-2" class="w-5 h-5 text-green-700 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <strong class="font-semibold text-slate-800">Optimización del Enrutamiento hacia el Ejecutivo Telefónico</strong>
+                            <p class="text-slate-700 text-sm">Reconfiguración del IVR para priorizar la conexión con agente en 15 segundos, asegurando el cumplimiento del estándar de &lt; 20s. <strong class="text-green-800">Impacto Directo:</strong> Mejora del % de atención rápida.</p>
+                        </div>
+                    </li>
+                    
+                    <!-- Orden Cambiado: 2. Capacitación -->
+                    <li class="flex items-start space-x-3">
+                        <i data-lucide="brain" class="w-5 h-5 text-green-700 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <strong class="font-semibold text-slate-800">Capacitación de Choque en "First Call Resolution" (FCR)</strong>
+                            <p class="text-slate-700 text-sm">Identificar casuísticas donde no se está logrando resolver (escalando a 2do Nivel) aún teniendo herramientas. Re-entrenamiento intensivo del personal en la resolución de problemas en el primer contacto para disminuir re-llamadas y liberar líneas. <strong class="text-green-800">Impacto Indirecto:</strong> Reduce la saturación general.</p>
+                        </div>
+                    </li>
+                    
+                    <!-- Orden Cambiado: 3. Callback -->
+                    <li class="flex items-start space-x-3">
+                        <i data-lucide="phone-call" class="w-5 h-5 text-green-700 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <strong class="font-semibold text-slate-800">Implementación de Sistema "Callback" Estratégico</strong>
+                            <p class="text-slate-700 text-sm">Solución tecnológica para ofrecer un mensaje de "Call Back" cuando se detecten todos los agentes ocupados, permitiendo al cliente colgar y recibir la llamada de un ejecutivo en cuanto se desocupe. <strong class="text-green-800">Impacto Directo:</strong> Reducción drástica del % de abandono.</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- Pie de Página -->
+        <footer class="p-6 bg-slate-50 border-t border-slate-200 space-y-4">
+            
+            <!-- Callout de Prioridad (Con animación) -->
+            <div class="rounded-lg bg-amber-50 p-4 border border-amber-200 shadow-sm flex items-center justify-center text-center">
+                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3">
+                    <div class="flex-shrink-0">
+                        <!-- Icono animado -->
+                        <i data-lucide="alert-triangle" class="w-7 h-7 text-amber-500 animate-subtle-bounce"></i>
+                    </div>
+                    <div>
+                        <!-- Texto animado -->
+                        <p class="text-sm md:text-base font-semibold text-amber-900 animate-subtle-scale">
+                            Prioridad Operacional:
+                            <span class="font-medium ml-1">La corrección del desempeño del CAT es clave para asegurar el liderazgo en la próxima evaluación.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fecha de Emisión -->
+            <p class="text-xs text-slate-400 text-center pt-2">
+                Fecha de Emisión del Reporte: 21 de Octubre de 2025
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- Script de Inicialización de Iconos y Colapsables -->
+    <script>
+      
+      // Espera a que el DOM esté cargado para ejecutar los scripts
+      document.addEventListener('DOMContentLoaded', () => {
+        try {
+            // Se asegura de que lucide esté definido antes de intentar crear iconos
+            if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                lucide.createIcons();
+            } else {
+                console.error("Lucide no está definido o createIcons no es una función. Revisa la carga del script.");
+            }
+        } catch (e) {
+            console.error("Error al inicializar los iconos Lucide:", e);
+        }
+      });
+
+      // Función para colapsar/expandir los botones de la Sección 2
+      function toggleCollapse(collapseId, iconId) {
+          const content = document.getElementById(collapseId);
+          const icon = document.getElementById(iconId);
+          
+          if (content.classList.contains('hidden')) {
+              content.classList.remove('hidden');
+              icon.classList.add('rotate-180');
+          } else {
+              content.classList.add('hidden');
+              icon.classList.remove('rotate-180');
+          }
+      }
+    </script>
+
+</body>
+</html>
+
+
